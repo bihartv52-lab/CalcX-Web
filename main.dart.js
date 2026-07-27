@@ -76410,7 +76410,7 @@ if(m==null){q=A.c([],t.kR)
 s=1
 break}p=4
 s=7
-return A.d(h.b5("calls").hl(0,"*, caller_profile:profiles!calls_caller_id_fkey(*), receiver_profile:profiles!calls_receiver_id_fkey(*)").VN("(caller_id.eq."+m+",receiver_id.eq."+m+")").Aw(0,"started_at",!1).Et(100),$async$FB)
+return A.d(h.b5("calls").hl(0,"*, caller_profile:profiles!calls_caller_id_fkey(*), receiver_profile:profiles!calls_receiver_id_fkey(*)").VN("caller_id.eq."+m+",receiver_id.eq."+m).Aw(0,"started_at",!1).Et(100),$async$FB)
 case 7:l=b
 j=J.dG(l,new A.aGM(),t.b_)
 j=A.P(j,j.$ti.i("aa.E"))
@@ -79412,7 +79412,7 @@ if(m==null){q=A.c([],t.H7)
 s=1
 break}p=4
 s=7
-return A.d(b0.b5("messages").iy(0).VN("(sender_id.eq."+m+",receiver_id.eq."+m+")").Aw(0,"created_at",!1).Et(100),$async$Bl)
+return A.d(b0.b5("messages").iy(0).VN("sender_id.eq."+m+",receiver_id.eq."+m).Aw(0,"created_at",!1).Et(100),$async$Bl)
 case 7:l=b3
 a4=t.N
 k=A.x(a4,t.a)
@@ -79501,7 +79501,7 @@ s=p}for(;;)switch(s){case 0:p=4
 j=n.b
 i=n.c
 s=7
-return A.d(n.a.b5("messages").iy(0).VN("(and(sender_id.eq."+j+",receiver_id.eq."+i+"),and(sender_id.eq."+i+",receiver_id.eq."+j+"))").a6G(0,"room_id","is",null).Aw(0,"created_at",!1).Et(100),$async$$0)
+return A.d(n.a.b5("messages").iy(0).VN("and(sender_id.eq."+j+",receiver_id.eq."+i+"),and(sender_id.eq."+i+",receiver_id.eq."+j+")").a6G(0,"room_id","is",null).Aw(0,"created_at",!1).Et(100),$async$$0)
 case 7:m=b
 j=n.d
 if((j.b&4)!==0){s=1
@@ -81270,7 +81270,7 @@ if(J.aG(m)===0){q=A.c([],t.Wg)
 s=1
 break}p=4
 s=7
-return A.d(g.b5("profiles").iy(0).VN("(username.ilike.%"+A.l(m)+"%,display_name.ilike.%"+A.l(m)+"%)").Et(20),$async$G_)
+return A.d(g.b5("profiles").iy(0).VN("username.ilike.%"+A.l(m)+"%,display_name.ilike.%"+A.l(m)+"%").Et(20),$async$G_)
 case 7:l=c
 g=J.dG(l,new A.aPI(),t.q5)
 g=A.P(g,g.$ti.i("aa.E"))
