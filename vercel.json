@@ -6,6 +6,10 @@
       "destination": "/landing.html"
     },
     {
+      "source": "/CalcX.apk",
+      "destination": "/CalcX.apk"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
